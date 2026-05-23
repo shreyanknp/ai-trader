@@ -1,8 +1,8 @@
-# AI Trader - Intraday Research MVP
+# AI Trader - Intraday MVP
 
 This project is an intraday trade-advisor sandbox for NSE/BSE stocks. It is built for research, backtesting, and paper trading first. Do not connect it to live orders until you have tested it with realistic costs, slippage, and strict risk limits.
 
-## Best First Setup
+## First Setup
 
 - Market: NSE large-cap equities
 - Universe: Nifty 50 or Nifty 100
@@ -137,8 +137,4 @@ The output is a decision-support signal:
 
 It also prints confidence, suggested stop-loss, target, and rough position sizing based on config risk.
 
-## Important Risk Notes
 
-Intraday trading is noisy. A model can look good in a weak backtest and still fail live because of overfitting, brokerage, taxes, slippage, poor fills, latency, and sudden news. Start with paper trading and keep position sizing small.
-
-For Indian markets, use SEBI-registered intermediaries and understand fees, margins, and risk before trading.
