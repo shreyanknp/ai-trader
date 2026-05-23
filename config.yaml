@@ -1,0 +1,36 @@
+market:
+  exchange: NSE
+  timeframe_minutes: 15
+  session_start: "09:15"
+  session_end: "15:15"
+
+kite:
+  instruments_path: data/instruments/NSE.csv
+  session_path: .secrets/kite_session.json
+  raw_data_dir: data/raw
+
+fyers:
+  env_path: src/aitrader/.env
+  raw_data_dir: data/raw
+  default_symbols:
+    - NSE:RELIANCE-EQ
+    - NSE:TCS-EQ
+    - NSE:INFY-EQ
+
+strategy:
+  holding_bars: 4
+  min_expected_return_bps: 18
+  estimated_round_trip_cost_bps: 8
+  buy_probability_threshold: 0.58
+  stop_loss_atr_multiple: 1.2
+  target_atr_multiple: 1.8
+
+risk:
+  account_size_inr: 100000
+  risk_per_trade_pct: 0.5
+  max_position_pct: 20
+
+model:
+  test_size_pct: 25
+  random_state: 42
+  reports_dir: reports

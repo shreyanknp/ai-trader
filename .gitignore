@@ -1,0 +1,13 @@
+.venv/
+.secrets/
+.env
+src/aitrader/.env
+__pycache__/
+*.csv
+*.pkl
+*.joblib
+*.pyc
+data/raw/
+data/instruments/
+reports/
+*.log
